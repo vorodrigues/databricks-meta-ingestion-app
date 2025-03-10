@@ -1,0 +1,10 @@
+command: [
+  "python", 
+  "app.py"
+]
+
+env:
+  - name: "DATABRICKS_WAREHOUSE_ID"
+    valueFrom: "sql-warehouse"
+  - name: "CONFIG_TABLE"
+    value: "vr_demo_dev.control.meta_ingestion_config"
